@@ -37,13 +37,16 @@ a{color: var(--white); text-decoration: none;}
     height: 50%;
 }
 .upside a, .downside a{
-    width: 100%;
+    width: 30px;
     text-align: center;
 }
 .upside a:hover, .downside a:hover{
     background-color: var(--footer-bg);
 }
-
+.downside .circle{
+    background-color: var(--nav-text);
+    padding: 3px 4px;
+}
 
 /*#endregion*/
 
@@ -105,7 +108,7 @@ a{color: var(--white); text-decoration: none;}
 .circle{border-radius: 50%;}
 
 #recently img, #mix img{
-    
+
 }
 
 
@@ -120,4 +123,18 @@ a{color: var(--white); text-decoration: none;}
     background-color: var(--footer-bg);
     height: 70px;
 }
+
+.footer_container{
+    height: 100%;
+    width: 100%;
+}
+.footer_container  .col{
+    display: flex;
+    width: 33.33%;
+    justify-content: center;
+}
+.footer_container img{
+    width: 30px;
+}
+
 /*#endregion*/
