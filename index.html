@@ -19,7 +19,7 @@
 
     <main class="site_main flex">
         <aside class="site_aside col-10 font-s-22 flex-col">
-            <div class="upside flex-col flex-ai-center">
+            <div class="upside flex-col flex-ai-center padding-t-10">
                 <a href="#" class="spotify">
                     <img src="./assets/img/logo-small.svg" alt="">
                 </a>
@@ -68,7 +68,12 @@
                     </h3>
                     <div class="card_section flex wrap  text-align-center">
                         <div class="card">
-                            <img src="./assets/img/metal_lifting.jpg" alt="">
+                            <div class="img">
+                                <img src="./assets/img/metal_lifting.jpg" alt="">
+                                <div class="">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
                                 <h4 class="card_name padding-y-7">
                                     Heavy Metal
                                 </h4>
@@ -179,26 +184,59 @@
 
     <footer class="site_footer">
         <div class="footer_container flex flex-ai-center">
-            <div class="col">
-                <div class="left_footer flex flex-ai-center">
-                    <div class="cover">
-                        <img src="./assets/img/sinister.jpeg" alt="">
+            <div class="footy left_footer padding-l-10 flex-ai-center">
+                <div class="cover">
+                    <img src="./assets/img/sinister.jpeg" alt="">
+                </div>
+                <!-- /.cover -->
+                <div class="song padding-x-10">
+                    <div class="song_name font-s-12">
+                        Sinister
                     </div>
-                    <div class="song">
-                        <div class="song_name">
-                            Sinister
-                        </div>
-                        <div class="song_description">
-                            Brano Nome
-                        </div>
+                    <div class="song_description font-s-10">
+                        Brano Nome
                     </div>
                 </div>
+                <!-- /.song -->
+                <div id="song" class="song_icons flex flex-col font-s-13">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+                <!-- /.song_icons -->
             </div>
-            <div class="col">
-                2
+            <div class="footy center_footer">
+                <div class="player">
+                    <div class="player_icons padding-b-10">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play font-s-23 padding-x-6"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <!-- /.player_icons -->
+                    <div class="player_bar font-s-10">
+                        <div class="start_time">0:25</div>
+                        <div class="bar central_bar">
+                            <div class="dark_bar"></div>
+                            <div class="point"></div>
+                        </div>
+                        <div class="end_time">4:35</div>
+                    </div>
+                </div>
+                <!-- /.player -->
             </div>
-            <div class="col">
-                2
+            <div class="footy right_footer">
+                <div class="padding-r-5">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="">
+                    <div class="right_bar">
+                        <div class="dark_bar"></div>
+                    </div>
+                </div>
+                <!-- /.right_footer -->
             </div>
         </div>
         <!-- /.footer_container -->

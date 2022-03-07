@@ -7,8 +7,10 @@
 --nav-text:      #797C80;
 --nav-active:    #ADFF2F;
 --aside-simbols: #D2D2D2;
+--footer-bar:    #C1C1C1;
 --upgrade:       #F4F4F4;
 --white:         #FFFFFF;
+
 }
 
 /*#region              COMMON*/
@@ -97,21 +99,27 @@ a{color: var(--white); text-decoration: none;}
 }
 .card{
     width: 40%;
-    min-width: 160px;
+    min-width: 120px;
     max-width: 200px;
     margin: 5px 10px;
 }
-.card > img{width: 100%;}
+.img{position: relative;}
+.card  img{width: 100%;}
 .card_name{font-size: 14px;}
 .card_description{color: var(--nav-text);font-size: 12px;}
 .subtitle{color: var(--nav-text);}
 .circle{border-radius: 50%;}
 
-#recently img, #mix img{
-
+#recently img:hover .hover_img, #mix img:hover .hover_img{
+    filter: brightness(70%);
+    display: block;
 }
 
+.hover_img > i{
+    width: 100px;
+    height: 100px;
 
+}
 
 /*#endregion*/
 
@@ -123,18 +131,178 @@ a{color: var(--white); text-decoration: none;}
     background-color: var(--footer-bg);
     height: 70px;
 }
-
 .footer_container{
-    height: 100%;
     width: 100%;
-}
-.footer_container  .col{
+    height: 100%;
     display: flex;
-    width: 33.33%;
-    justify-content: center;
 }
-.footer_container img{
-    width: 30px;
+.footy{
+    width: 33.33%;
+    display: flex;
+}
+
+.left_footer    {order: 1;}
+.center_footer  {order: 2;}
+.right_footer   {order: 3;}
+
+/*#region           LEFT*/
+
+.cover img{
+    width: 35px;
+}
+.song_description, .song_icons{
+    color: var(--nav-text);
+}
+
+#song{
+    display: none;
 }
 
 /*#endregion*/
+
+
+/*#region           CENTER*/
+
+.player{
+    width: 100%;
+    min-width: 120px;
+}
+.player_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 150px;
+    position: relative;
+    margin: auto;
+
+    
+}
+.player_bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: auto;
+}
+
+
+/*#endregion*/
+
+/*#region           RIGHT*/
+.right_footer{
+    position: relative;
+}
+
+.right_footer > div:first-child{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+}
+.right_footer > div:last-child{
+    position: relative;
+    width: 50%;
+}
+.right_bar{
+    background-color: var(--footer-light);
+    position: absolute;
+    height: 4px;
+    cursor: pointer;
+    width: calc(100% - 25px);
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    max-width: 200px;
+    display: none;
+}
+
+/*#endregion*/
+
+
+
+
+.central_bar{
+    background-color: var(--footer-light);
+    position: absolute;
+    height: 4px;
+    cursor: pointer;
+}
+.central_bar{
+    width: calc(100% - 60px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dark_bar{
+    position: absolute;
+    background-color: var(--footer-bar);
+    height: 100%;
+    width: 20%;
+}
+.point{
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background-color: green;
+    border-radius: 50%;
+    z-index: 9999;
+    top: -5px;
+    left: calc(20% - 7px);
+    cursor: pointer;
+    display: none;
+}
+.bar:hover .point{background-color: var(--white);display: block;}
+.bar:hover .dark_bar{background-color: #ADFF2F;}
+
+
+/*#endregion*/
+
+
+
+
+@media screen and (min-width: 500px){
+
+
+    /*      FOOTER*/
+
+
+    .right_footer > div:first-child{
+        width: 50%;
+        text-align: right;
+    }
+    .right_bar, #song{
+        display: block;
+    }
+    .right_bar{
+        width: 50%;
+    }
+    #song{
+        display: flex;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 336px){
+    
+
+/*          MAIN*/
+    h3, .subtitle   {text-align: center;}
+    .card_section   {justify-content: center;}
+/*          FOOTER*/
+    .footer_container{justify-content: space-between;}
+    .left_footer    {width: 50%;}
+    .center_footer  {width: 50%; padding-right: 10px;}
+    .right_footer   {order: 2; display: none;}
+}
+
+@media screen and (max-width: 250px){
+    .left_footer    {display: none;}
+    .center_footer  {width: 100%; padding: 0 15px;}
+}
+
+
+
