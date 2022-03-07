@@ -101,6 +101,14 @@ a{color: var(--white); text-decoration: none;}
 .card > img{width: 100%;}
 .card_name{font-size: 14px;}
 .card_description{color: var(--nav-text);font-size: 12px;}
+.subtitle{color: var(--nav-text);}
+.circle{border-radius: 50%;}
+
+#recently img, #mix img{
+    
+}
+
+
 
 /*#endregion*/
 
