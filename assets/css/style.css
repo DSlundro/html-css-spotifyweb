@@ -1,0 +1,70 @@
+:root{
+--black:         #000000;
+--upgrade-bg:    #080B12;
+--main-bg:       #141922;
+--footer-bg:     #282828;
+--footer-light:  #5A5A5A;
+--nav-text:      #797C80;
+--nav-active:    #ADFF2F;
+--aside-simbols: #D2D2D2;
+--upgrade:       #F4F4F4;
+--white:         #FFFFFF;
+}
+
+
+
+/*#region            COMMON*/
+*{margin: 0;bottom: 0;box-sizing: border-box;}
+
+
+/*#endregion*/
+
+
+/*#region              MAIN*/
+
+/*#region           ASIDE*/
+.site_aside{
+    background-color: var(--black); 
+    height: 100%;
+}
+
+/*#endregion*/
+
+.site_main{
+    height: calc(100vh - 70px);
+}
+
+/*#region           UPGRADE*/
+.upgrade{
+    background-color: blue;
+    height: 70px;
+    
+}
+
+/*#endregion*/
+
+/*#region           NAVBAR*/
+.site_navbar{
+    background-color: red;
+    height: 80px;
+}
+
+/*#endregion*/
+
+/*#region           MAIN-CONTAINER*/
+.main_container{
+    background-color: var(--main-bg);
+    height: calc(100% - 150px);
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region               FOOTER*/
+
+.site_footer{
+    background-color: var(--footer-bg);
+    height: 70px;
+}
+/*#endregion*/
