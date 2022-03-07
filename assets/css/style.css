@@ -13,7 +13,7 @@
 
 /*#region              COMMON*/
 *{margin: 0;bottom: 0;box-sizing: border-box;}
-body{font-family:Arial, Helvetica, sans-serif; color: white;overflow: hidden;}
+body{font-family: 'Roboto', sans-serif; color: white;overflow: hidden;}
 a{color: var(--white); text-decoration: none;}
 
 /*#endregion*/
@@ -30,6 +30,7 @@ a{color: var(--white); text-decoration: none;}
 .site_aside{
     background-color: var(--black); 
     height: 100%;
+    min-width: 42px;
     position: fixed;
 }
 .upside, .downside{
@@ -61,16 +62,25 @@ a{color: var(--white); text-decoration: none;}
     position: absolute;
     right: 5px;
     bottom: 22px;
+    text-align: center;
 }
-
-
 
 /*#endregion*/
 
 /*#region           NAVBAR*/
 .site_navbar{
-    background-color: red;
-    height: 80px;
+    background-color: var(--main-bg);
+    max-height: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+}
+.site_navbar > a{
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    color: var(--nav-text);
 }
 
 /*#endregion*/
@@ -79,7 +89,18 @@ a{color: var(--white); text-decoration: none;}
 .main_container{
     background-color: var(--main-bg);
     height: calc(100% - 150px);
+    overflow-y: auto;
+
 }
+.card{
+    width: 40%;
+    min-width: 160px;
+    max-width: 200px;
+    margin: 5px 10px;
+}
+.card > img{width: 100%;}
+.card_name{font-size: 14px;}
+.card_description{color: var(--nav-text);font-size: 12px;}
 
 /*#endregion*/
 
