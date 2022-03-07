@@ -13,7 +13,8 @@
 
 /*#region              COMMON*/
 *{margin: 0;bottom: 0;box-sizing: border-box;}
-body{font-family: 'Roboto', sans-serif; color: white;}
+body{font-family:Arial, Helvetica, sans-serif; color: white;overflow: hidden;}
+a{color: var(--white); text-decoration: none;}
 
 /*#endregion*/
 
@@ -22,31 +23,47 @@ body{font-family: 'Roboto', sans-serif; color: white;}
 
 .site_main{
     height: calc(100vh - 70px);
+    position: relative;
 }
 
 /*#region           ASIDE*/
 .site_aside{
     background-color: var(--black); 
     height: 100%;
-    
+    position: fixed;
 }
 .upside, .downside{
     height: 50%;
 }
 .upside a, .downside a{
-    color: var(--white);
+    width: 100%;
+    text-align: center;
 }
-
+.upside a:hover, .downside a:hover{
+    background-color: var(--footer-bg);
+}
 
 
 /*#endregion*/
 
 /*#region           UPGRADE*/
 .upgrade{
-    background-color: blue;
+    background-color: var(--upgrade-bg);
+    position: relative;
     height: 70px;
-    
 }
+.btn-upgrade{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 7px 40px;
+    position: absolute;
+    right: 5px;
+    bottom: 22px;
+}
+
+
 
 /*#endregion*/
 
