@@ -11,28 +11,35 @@
 --white:         #FFFFFF;
 }
 
-
-
-/*#region            COMMON*/
+/*#region              COMMON*/
 *{margin: 0;bottom: 0;box-sizing: border-box;}
-
+body{font-family: 'Roboto', sans-serif; color: white;}
 
 /*#endregion*/
 
 
 /*#region              MAIN*/
 
+.site_main{
+    height: calc(100vh - 70px);
+}
+
 /*#region           ASIDE*/
 .site_aside{
     background-color: var(--black); 
     height: 100%;
+    
 }
+.upside, .downside{
+    height: 50%;
+}
+.upside a, .downside a{
+    color: var(--white);
+}
+
+
 
 /*#endregion*/
-
-.site_main{
-    height: calc(100vh - 70px);
-}
 
 /*#region           UPGRADE*/
 .upgrade{

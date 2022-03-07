@@ -10,13 +10,39 @@
     <link rel="shortcut icon" href="./assets/img/spotify.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
           integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
-          crossorigin="anonymous" referrerpolicy="no-referrer" />   
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">   
 </head>
 <body>
 
     <main class="site_main flex">
-        <aside class="site_aside col-10">
-
+        <aside class="site_aside col-10 font-s-22 flex-col">
+            <div class="upside flex-col flex-ai-center">
+                <a href="#" class="spotify padding-y-5">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+                <a href="#" class="home padding-y-5">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a href="#" class="search padding-y-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="favourite padding-y-5">
+                    <i class="fa-solid fa-sliders"></i>
+                </a>
+            </div>
+            <!-- /.upside -->
+            <div class="downside flex-col flex-ai-center flex-jc-end">
+                <a href="#" class="info font-s-10 padding-y-5">
+                    <i class="fa-regular fa-circle-question"></i>
+                </a>
+                <a href="#" class="user padding-y-5">
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+            </div>
+            <!-- /.downside -->
         </aside>
         <!-- /.site_aside -->
         <div class="_container col-90">
