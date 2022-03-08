@@ -18,7 +18,15 @@
 html{overflow: hidden;}
 body{font-family: 'Roboto', sans-serif; color: white;overflow: hidden;}
 a{color: var(--white); text-decoration: none;}
-    
+*::-webkit-scrollbar{width: 12px; height: 12px;} 
+*::-webkit-scrollbar-track {background: rgba(169, 169, 169, 0.089);}
+*::-webkit-scrollbar-thumb{
+    background-color: rgba(128, 128, 128, 0.521);
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.486);
+}
+*::-webkit-scrollbar-thumb:active{background-color: rgba(168, 168, 168, 0.637)}
+
 /*#endregion*/
 
 /*#region               UTILITY*/
