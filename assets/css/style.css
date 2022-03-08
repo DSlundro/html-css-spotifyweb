@@ -512,3 +512,7 @@ footer i:hover, footer img:hover{
     .main_container         {height: calc(100vh - 269px);}
 }
 /*#endregion*/
+
+@media screen and (max-height: 250px){
+    .upgrade                {display: none;}
+}
