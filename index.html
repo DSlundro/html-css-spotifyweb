@@ -1,248 +1,324 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/utility.css">
-    <link rel="shortcut icon" href="./assets/img/spotify.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
-          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/utility.css">
+        <link rel="shortcut icon" href="./assets/img/spotify.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
 
-    <main class="site_main flex">
-        <aside class="site_aside col-10 font-s-22 flex-col">
-            <div class="upside flex-col flex-ai-center padding-t-10">
-                <a href="#" class="spotify">
-                    <img src="./assets/img/logo-small.svg" alt="">
-                </a>
-                <a href="#" class="home">
-                    <img src="./assets/img/home.svg" alt="">
-                </a>
-                <a href="#" class="search">
-                    <img src="./assets/img/search.svg" alt="">
-                </a>
-                <a href="#" class="favourite">
-                    <img src="./assets/img/libreria.svg" alt="">
-                </a>
-            </div>
-            <!-- /.upside -->
-            <div class="downside flex-col flex-ai-center flex-jc-end">
-                <a href="#" class="info font-s-10 padding-b-10">
-                    <i class="fa-regular fa-circle-question"></i>
-                </a>
-                <a href="#" class="user">
-                    <img src="./assets/img/profile.svg" alt="" class="circle">
-                </a>
-            </div>
-            <!-- /.downside -->
-        </aside>
-        <!-- /.site_aside -->
-        <div class="main_container col-90">
-            <div class="upgrade">
-                <a href="#" class="font-s-10 btn-upgrade">
-                    effettua l'upgrade
-                </a>
-            </div>
-            <!-- /.upgrade -->
-            <nav class="site_navbar font-s-11">
-                <a href="#">in evidenza</a>
-                <a href="#">podcast</a>
-                <a href="#">classifiche</a>
-                <a href="#">generi e mood</a>
-                <a href="#">nuove uscite</a>
-                <a href="#">scopri</a>
-            </nav>
-            <!-- /.site_navbar -->
-            <div class="main_container">
-                <div id="recently" class="list_section margin-b-25">
-                    <h3 class="margin-l-10 margin-y-20 font-s-22">
-                        Recently Played
-                    </h3>
-                    <div class="card_section flex wrap  text-align-center">
-                        <div class="card">
-                            <div class="img">
-                                <img src="./assets/img/metal_lifting.jpg" alt="">
-                                <div class="">
-                                    <i class="fa-regular fa-circle-play"></i>
+        <div class="container flex">
+            <aside class="sidebar flex">
+                <div class="upside flex">
+                    <div class="spotify">
+                        <a href="#" >
+                            <img src="./assets/img/logo-small.svg" alt="">
+                            <img src="./assets/img/logo.svg" alt="" class="d-none">
+                        </a>
+                    </div>
+                    <div class="home">
+                        <a href="#">
+                            <img src="./assets/img/home.svg" alt="">
+                            <h4>Home</h4>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <a href="#">
+                            <img src="./assets/img/search.svg" alt="">
+                            <h4>Search</h4>
+                        </a>
+                    </div>
+                    <div class="library">
+                        <a href="#">
+                            <img src="./assets/img/libreria.svg" alt="">
+                            <h4>La tua libreria</h4>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.upside -->
+                <div class="centerside flex">
+                    <div class="playlist">
+                        <a href="#">
+                            <h4 class="white">PLAYLIST</h4>
+                        </a>
+                    </div>
+                    <div class="add_playlist">
+                        <a href="#" class="flex">
+                            <i class="fa-solid fa-plus"></i>
+                            <h4>Crea Playlist</h4>
+                        </a>
+                    </div>
+                    <div class="playlists">
+                        <div class="playlist_name">
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </div>
+                        <div class="playlist_name">
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </div>
+                        <div class="playlist_name">
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </div>
+                        <div class="playlist_name">
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </div>
+                        <div class="playlist_name">
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </div>
+                        <div class="playlist_name">
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </div>
+                        <div class="playlist_name">
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.centerside -->
+                <div class="downside flex">
+                    <div class="install">
+                        <a href="#">
+                            <i class="fa-regular fa-circle-question"></i>
+                            <h4>Installa app</h4>
+                        </a>
+                    </div>
+                    <div class="user">
+                        <a href="#">
+                            <img src="./assets/img/profile.svg" alt="">
+                            <h4 class="white">John Doe</h4>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.downside -->
+            </aside>
+            <main class="">
+
+                <div class="upgrade">
+                    <a href="#" class="btn-upgrade">
+                        effettua l'upgrade
+                    </a>
+                </div>
+                <!-- /.updrade -->
+
+                <nav class="site_navbar font-s-11 padding-y-10">
+                    <a href="#">in evidenza</a>
+                    <a href="#">podcast</a>
+                    <a href="#">classifiche</a>
+                    <a href="#">generi e mood</a>
+                    <a href="#">nuove uscite</a>
+                    <a href="#">scopri</a>
+                </nav>
+                <!-- /.site_navbar -->
+
+                    <div class="main_container">
+                        <div id="recently" class="list_section margin-b-25">
+                            <h3 class="margin-l-10 margin-y-20 font-s-22">
+                                Recently Played
+                            </h3>
+                            <div class="card_section flex wrap  text-align-center">
+                                <div class="card">
+                                    <div class="img">
+                                        <img src="./assets/img/metal_lifting.jpg" alt="">
+                                        <div class="">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </div>
+                                        <h4 class="card_name padding-y-7">
+                                            Heavy Metal
+                                        </h4>
+                                        <p class="card_description">
+                                            Subtitle
+                                        </p>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/img/stranger.jpeg" alt="">
+                                        <h4 class="card_name padding-y-7">
+                                            Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
+                                        </h4>
+                                        <p class="card_description">
+                                            Kyle Dixon & Michael Stein
+                                        </p>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/img/aquietplace.jpeg" alt="">
+                                        <h4 class="card_name padding-y-7">
+                                           A quiet place
+                                        </h4>
+                                        <p class="card_description">
+                                            Subtitle
+                                        </p>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/img/split.jpeg" alt="">
+                                        <h4 class="card_name padding-y-7">
+                                            Split
+                                        </h4>
+                                        <p class="card_description">
+                                            Subtitle
+                                        </p>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/img/cure.jpeg" alt="">
+                                        <h4 class="card_name padding-y-7">
+                                           A cure for wellness
+                                        </h4>
+                                        <p class="card_description">
+                                            Subtitle
+                                        </p>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/img/sinister.jpeg" alt="">
+                                        <h4 class="card_name padding-y-7">
+                                            Sinister
+                                        </h4>
+                                        <p class="card_description">
+                                            Subtitle
+                                        </p>
                                 </div>
                             </div>
-                                <h4 class="card_name padding-y-7">
-                                    Heavy Metal
-                                </h4>
-                                <p class="card_description">
-                                    Subtitle
-                                </p>
                         </div>
-                        <div class="card">
-                            <img src="./assets/img/stranger.jpeg" alt="">
-                                <h4 class="card_name padding-y-7">
-                                    Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
-                                </h4>
-                                <p class="card_description">
-                                    Kyle Dixon & Michael Stein
-                                </p>
+                        <!-- /.list_section -->
+                        <div id="mix" class="list_section margin-y-50">
+                            <h3 class="margin-l-10 margin-t-10 font-s-22">
+                                Creato per John Doe
+                            </h3>
+                            <p class="subtitle margin-l-10 padding-y-7">
+                                Più ascolti, più accurati saranno i suggerimenti.
+                            </p>
+                            <div class="card_section flex wrap  text-align-center padding-t-20">
+                                <div class="card">
+                                    <img src="./assets/img/radar.jpeg" alt="">
+                                        <h4 class="card_name padding-y-7">
+                                            Release Radar
+                                        </h4>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/img/mixdaily.jpeg" alt="">
+                                        <h4 class="card_name padding-y-7">
+                                            Dally Mix 1
+                                        </h4>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card">
-                            <img src="./assets/img/aquietplace.jpeg" alt="">
-                                <h4 class="card_name padding-y-7">
-                                   A quiet place
-                                </h4>
-                                <p class="card_description">
-                                    Subtitle
-                                </p>
+                        <!-- /.list_section -->
+                        <div id="artists" class="list_section margin-y-50">
+                            <h3 class="margin-l-10 margin-t-10 font-s-22">
+                                Artisti pià popolari
+                            </h3>
+                            <p class="subtitle margin-l-10 padding-y-7">
+                                Più ascolti, più accurati saranno i suggerimenti.
+                            </p>
+                            <div class="card_section flex wrap  text-align-center padding-t-20">
+                                <div class="card">
+                                    <img src="./assets/img/youg.jpeg" alt="" class="circle">
+                                        <h4 class="card_name padding-y-7">
+                                            Lana del Rey
+                                        </h4>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/img/einaudi.jpeg" alt="" class="circle">
+                                        <h4 class="card_name padding-y-7">
+                                            Ludovico Einaudi
+                                        </h4>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card">
-                            <img src="./assets/img/split.jpeg" alt="">
-                                <h4 class="card_name padding-y-7">
-                                    Split
-                                </h4>
-                                <p class="card_description">
-                                    Subtitle
-                                </p>
-                        </div>
-                        <div class="card">
-                            <img src="./assets/img/cure.jpeg" alt="">
-                                <h4 class="card_name padding-y-7">
-                                   A cure for wellness
-                                </h4>
-                                <p class="card_description">
-                                    Subtitle
-                                </p>
-                        </div>
-                        <div class="card">
-                            <img src="./assets/img/sinister.jpeg" alt="">
-                                <h4 class="card_name padding-y-7">
-                                    Sinister
-                                </h4>
-                                <p class="card_description">
-                                    Subtitle
-                                </p>
-                        </div>
+                        <!-- /.list_section -->
                     </div>
-                </div>
-                <!-- /.list_section -->
-                <div id="mix" class="list_section margin-y-50">
-                    <h3 class="margin-l-10 margin-t-10 font-s-22">
-                        Creato per John Doe
-                    </h3>
-                    <p class="subtitle margin-l-10 padding-y-7">
-                        Più ascolti, più accurati saranno i suggerimenti.
-                    </p>
-                    <div class="card_section flex wrap  text-align-center padding-t-20">
-                        <div class="card">
-                            <img src="./assets/img/radar.jpeg" alt="">
-                                <h4 class="card_name padding-y-7">
-                                    Release Radar
-                                </h4>
-                        </div>
-                        <div class="card">
-                            <img src="./assets/img/mixdaily.jpeg" alt="">
-                                <h4 class="card_name padding-y-7">
-                                    Dally Mix 1
-                                </h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.list_section -->
-                <div id="artists" class="list_section margin-y-50">
-                    <h3 class="margin-l-10 margin-t-10 font-s-22">
-                        Artisti pià popolari
-                    </h3>
-                    <p class="subtitle margin-l-10 padding-y-7">
-                        Più ascolti, più accurati saranno i suggerimenti.
-                    </p>
-                    <div class="card_section flex wrap  text-align-center padding-t-20">
-                        <div class="card">
-                            <img src="./assets/img/youg.jpeg" alt="" class="circle">
-                                <h4 class="card_name padding-y-7">
-                                    Lana del Rey
-                                </h4>
-                        </div>
-                        <div class="card">
-                            <img src="./assets/img/einaudi.jpeg" alt="" class="circle">
-                                <h4 class="card_name padding-y-7">
-                                    Ludovico Einaudi
-                                </h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.list_section -->
-            </div>
-            <!-- /.main_container -->
-        </div>
-        <!-- /._container -->
-    </main>
-    <!-- /.site_main -->
+                    <!-- /.main_container -->
+                <!-- /.main_container -->
+            </main>
 
-    <footer class="site_footer">
-        <div class="footer_container flex flex-ai-center">
-            <div class="footy left_footer padding-l-10 flex-ai-center">
-                <div class="cover">
-                    <img src="./assets/img/sinister.jpeg" alt="">
-                </div>
-                <!-- /.cover -->
-                <div class="song padding-x-10">
-                    <div class="song_name font-s-12">
-                        Sinister
+        </div>
+        <!-- /.container -->
+
+        <footer class="site_footer">
+
+            <div class="footer_container flex flex-ai-center">
+                <div class="footy left_footer padding-l-10 flex-ai-center">
+                    <div class="cover">
+                        <img src="./assets/img/sinister.jpeg" alt="">
                     </div>
-                    <div class="song_description font-s-10">
-                        Brano Nome
+                    <!-- /.cover -->
+                    <div class="song padding-x-10">
+                        <div class="song_name font-s-12">
+                            Sinister
+                        </div>
+                        <div class="song_description font-s-10">
+                            Brano Nome
+                        </div>
                     </div>
-                </div>
-                <!-- /.song -->
-                <div id="song" class="song_icons flex flex-col font-s-13">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
-                </div>
-                <!-- /.song_icons -->
-            </div>
-            <div class="footy center_footer">
-                <div class="player">
-                    <div class="player_icons padding-b-10">
-                        <i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-regular fa-circle-play font-s-23 padding-x-6"></i>
-                        <i class="fa-solid fa-forward-step"></i>
-                        <i class="fa-solid fa-rotate-right"></i>
+                    <!-- /.song -->
+                    <div id="song" class="song_icons flex flex-col font-s-13">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
                     </div>
-                    <!-- /.player_icons -->
-                    <div class="player_bar font-s-10">
-                        <div class="start_time">0:25</div>
-                        <div class="bar central_bar">
+                    <!-- /.song_icons -->
+                </div>
+                <div class="footy center_footer">
+                    <div class="player">
+                        <div class="player_icons padding-b-10">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <i class="fa-solid fa-backward-step"></i>
+                            <i class="fa-regular fa-circle-play font-s-23 padding-x-6"></i>
+                            <i class="fa-solid fa-forward-step"></i>
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </div>
+                        <!-- /.player_icons -->
+                        <div class="player_bar font-s-10">
+                            <div class="start_time">0:25</div>
+                            <div class="bar central_bar">
+                                <div class="dark_bar"></div>
+                                <div class="point"></div>
+                            </div>
+                            <div class="end_time">4:35</div>
+                        </div>
+                    </div>
+                    <!-- /.player -->
+                </div>
+                <div class="footy right_footer">
+                    <div class="padding-r-5">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-desktop"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="">
+                        <div class="right_bar">
                             <div class="dark_bar"></div>
-                            <div class="point"></div>
                         </div>
-                        <div class="end_time">4:35</div>
                     </div>
+                    <!-- /.right_footer -->
                 </div>
-                <!-- /.player -->
             </div>
-            <div class="footy right_footer">
-                <div class="padding-r-5">
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-solid fa-desktop"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                </div>
-                <div class="">
-                    <div class="right_bar">
-                        <div class="dark_bar"></div>
-                    </div>
-                </div>
-                <!-- /.right_footer -->
-            </div>
-        </div>
-        <!-- /.footer_container -->
-    </footer>
-    <!-- /.site_footer -->
+            <!-- /.footer_container -->
 
-    
-</body>
+
+
+        </footer>
+        
+
+        
+    </body>
 </html>
