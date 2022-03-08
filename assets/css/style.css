@@ -50,7 +50,7 @@ a{color: var(--white); text-decoration: none;}
 
 .sidebar{
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 0px;
     position: relative;
 }
 .sidebar h4{
@@ -94,6 +94,9 @@ a{color: var(--white); text-decoration: none;}
 .downside .user:hover{
     cursor: initial ;
 }
+.home{
+    border-left: 2px solid var(--nav-active);
+}
 /*#endregion*/
 
 /*#region           UPGRADE*/
@@ -123,7 +126,6 @@ a{color: var(--white); text-decoration: none;}
     text-transform: uppercase;
     height: auto;
     margin: 1px;
-    margin-right: 20px;
     border-radius: 25px;
     text-align: center;
     position: relative;
@@ -141,12 +143,12 @@ a{color: var(--white); text-decoration: none;}
     left:-2px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
+    filter: blur(10px);
+    width: 100%;
+    height: 100%;
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
     border-radius: 10px;
 }
 .btn-upgrade:active:after{background: transparent;}
@@ -171,7 +173,7 @@ a{color: var(--white); text-decoration: none;}
 
 @keyframes glowing {
     0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
+    50% { background-position: 500% 0; }
     100% { background-position: 0 0; }
 }
 
@@ -196,6 +198,14 @@ a{color: var(--white); text-decoration: none;}
 .site_navbar > a:hover{
     color: var(--white);
 }
+.green{
+    background-color: var(--nav-active);
+    margin: auto;
+    margin-top: 2px;
+    height: 2px;
+    width: 25px;
+}
+
 
 /*#endregion*/
 
@@ -203,6 +213,8 @@ a{color: var(--white); text-decoration: none;}
 
 .main_container{
     background-color: var(--main-bg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: calc(100vh - 205px);
     width: 100%;
     overflow-y: auto;
@@ -210,9 +222,8 @@ a{color: var(--white); text-decoration: none;}
 }
 .card{
     position: relative;
-    width: 40%;
-    min-width: 120px;
-    max-width: 200px;
+    min-width: 170px;
+    max-width: 220px;
     margin: 5px 10px;
 }
 .img{position: relative;}
@@ -239,6 +250,13 @@ a{color: var(--white); text-decoration: none;}
     
 }
 
+.list_section{
+    max-width: 100%;
+    overflow-x: auto;
+}
+.card_section{
+    flex-wrap: nowrap;
+}
 
 /*#endregion*/
 
@@ -391,8 +409,8 @@ footer i:hover, footer img:hover{
 @media screen and (min-width: 768px){
 
     /*#region           LAYOUT*/
-    .container > aside      {width: 260px;}
-    .container > main       {width: calc(100% - 260px);}
+    .container > aside      {width: 200px;}
+    .container > main       {width: calc(100% - 200px);}
     /*#endregion*/
 
     /*#region           ASIDE*/
@@ -415,6 +433,10 @@ footer i:hover, footer img:hover{
     .playlists h4           {padding: 0;}
     .playlists              {max-height: 150px;margin-top: 10px;overflow-y: auto;}
     /*#endregion*/
+
+    /*#region           MAIN*/
+    .card_section           {flex-wrap: wrap;}
+    /**/
 
     /*#region           FOOTER*/
     .right_footer > div:last-child{
