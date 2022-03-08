@@ -15,7 +15,7 @@
     
 /*#region               COMMON*/
 *{margin: 0;bottom: 0;box-sizing: border-box;}
-html{overflow: hidden; transition: all 0.4s;}
+html{overflow: hidden;}
 body{font-family: 'Roboto', sans-serif; color: white;overflow: hidden;}
 a{color: var(--white); text-decoration: none;}
     
@@ -50,7 +50,7 @@ a{color: var(--white); text-decoration: none;}
 
 .sidebar{
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 20px;
     position: relative;
 }
 .sidebar h4{
@@ -261,9 +261,13 @@ footer{
     text-align: center;
     padding-left: 10px;
 }
+.right_footer > div:first-child i{
+    padding: 0 10px;
+}
 .right_footer > div:last-child{
     position: relative;
     width: 50%;
+    display: none;
 }
 .right_bar{
     background-color: var(--footer-light);
@@ -275,16 +279,9 @@ footer{
     top: 50%;
     transform: translate(0, -50%);
     max-width: 200px;
-    display: none;
 }
 
 /*#endregion*/
-
-
-
-
-/*#endregion*/
-
 
 /*#endregion*/
 
@@ -293,8 +290,8 @@ footer{
 @media screen and (min-width: 768px){
 
     /*#region           LAYOUT*/
-    .container > aside {width: 260px;}
-    .container > main {width: calc(100% - 260px);}
+    .container > aside      {width: 260px;}
+    .container > main       {width: calc(100% - 260px);}
     /*#endregion*/
 
     /*#region           ASIDE*/
@@ -308,17 +305,26 @@ footer{
     .downside               {height: 100%;}
     .centerside             {display: block;flex-direction: column;padding-top: 10px;}
     .centerside i           {display: block;}
-    .add_playlist i         {background-color: var(--aside-simbols);
-                             color: var(--nav-text);
-                             font-size: 20px;
-                             padding: 10px;}
+    .add_playlist i         {
+        background-color: var(--aside-simbols);
+        color: var(--nav-text);
+        font-size: 20px;
+        padding: 10px;}
     .playlist h4, 
     .playlists h4           {padding: 0;}
     .playlists              {max-height: 150px;margin-top: 10px;overflow-y: auto;}
     /*#endregion*/
 
     /*#region           FOOTER*/
-    .right_bar              {display: block;}
+    .right_footer > div:last-child{
+        display: block;
+        width: 40%;
+    }
+    .right_footer > div:first-child{
+        width: 60%;
+        text-align: right;
+    }
+    
     /*#endregion*/
 }
 
