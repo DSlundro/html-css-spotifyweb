@@ -83,6 +83,22 @@ a{color: var(--white); text-decoration: none;}
     display: none;
 }
 .centerside i{display: none;}
+.centerside i:hover{background-color: var(--white);}
+
+.upside a:hover,
+.centerside a:hover,
+.downside a:hover{
+    color: var(--white);
+}
+
+.downside .user:hover{
+    cursor: initial ;
+}
+
+/* img   hover*/
+
+
+
 
 /*#endregion*/
 
@@ -106,6 +122,9 @@ a{color: var(--white); text-decoration: none;}
     border-radius: 25px;
     text-align: center;
 }
+.btn-upgrade:hover{
+   font-size: large;
+}
 /*#endregion*/
 
 /*#region           NAVBAR*/
@@ -123,6 +142,9 @@ a{color: var(--white); text-decoration: none;}
     text-transform: uppercase;
     padding: 10px 10px;
     color: var(--nav-text);
+}
+.site_navbar > a:hover{
+    color: var(--white);
 }
 
 /*#endregion*/
@@ -149,11 +171,6 @@ a{color: var(--white); text-decoration: none;}
 .subtitle{color: var(--nav-text);}
 .circle{border-radius: 50%;}
 
-#recently img:hover .hover_img, #mix img:hover .hover_img{
-    filter: brightness(70%);
-    display: block;
-}
-
 /*#endregion*/
 
 /*#region           FOOTER*/
@@ -163,7 +180,9 @@ footer{
     height: 80px;
     position: relative;
 }
-
+footer i:hover, footer img:hover{
+    cursor: pointer;
+}
 .footer_container{
     width: 100%;
     height: 100%;
@@ -186,6 +205,14 @@ footer{
 .song_description, .song_icons{
     color: var(--nav-text);
 }
+.song_description:hover{
+    color: var(--white);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.song_icons i:hover{
+    color: var(--white);
+}
 
 /*#endregion*/
 
@@ -202,9 +229,10 @@ footer{
     align-items: center;
     max-width: 150px;
     position: relative;
-    margin: auto;
-
-    
+    margin: auto; 
+}
+.player_icons .fa-circle-play:hover{
+    font-size: 25px;
 }
 .player_bar{
     position: relative;
@@ -245,8 +273,12 @@ footer{
     cursor: pointer;
     display: none;
 }
-.bar:hover .point{background-color: var(--white);display: block;}
-.bar:hover .dark_bar{background-color: #ADFF2F;}
+.bar:hover .point,
+.right_bar:hover .point
+{background-color: var(--white);display: block;}
+.bar:hover .dark_bar,
+.right_bar:hover .dark_bar
+{background-color: #ADFF2F;}
 
 /*#endregion*/
 
