@@ -363,6 +363,9 @@ footer i:hover, footer img:hover{
 
 /*#region               QUERY*/
 
+@media screen and (min-width: 1030px){
+    .card                   {min-width: 250px;max-width: 270px;}
+}
 
 @media screen and (min-width: 768px){
 
@@ -390,6 +393,9 @@ footer i:hover, footer img:hover{
     .playlist h4, 
     .playlists h4           {padding: 0;}
     .playlists              {max-height: 150px;margin-top: 10px;overflow-y: auto;}
+    .playlist_name i        {display: none; font-size: 12px; padding-right: 7px;}
+    .playlist_name:hover i  {display: block;}
+
     /*#endregion*/
 
     /*#region           MAIN*/
@@ -410,8 +416,8 @@ footer i:hover, footer img:hover{
 }
 
 @media screen and (max-width: 767px){
-    .container > aside      {width: 70px;}
-    .container > main       {width: calc(100% - 70px);}
+    .container > aside      {width: 50px;}
+    .container > main       {width: calc(100% - 50px);}
 
     /*#region           ASIDE*/
     .upside, .downside      {align-items: center;}
@@ -461,7 +467,6 @@ footer i:hover, footer img:hover{
 @media screen and (max-width: 295px){
     .main_container         {height: calc(100vh - 269px);}
 }
-/*#endregion*/
 
 @media screen and (max-height: 250px){
     .upgrade                {display: none;}
