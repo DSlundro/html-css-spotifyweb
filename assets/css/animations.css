@@ -1,14 +1,37 @@
-/*      main background color*/
+/*#region       transitions*/
+.container > aside{
+    transition: all 0.4s;
+}
 
-.main_container{
-    background-image: linear-gradient(0deg, var(--main-bg) 5%, #0f0f2996 80%);
+.img:hover img{
+    filter: brightness(80%);
+    width: calc(100% + 2px);
+    transition: all 0.4s;
+}
+
+.card{
+    transition: all 0.4s;}
+
+@media screen and (min-width: 1024px){
+    .card{
+    min-width: 250px;
+    max-width: 270px;
+}
 }
 
 
+/*#endregion*/
 
-/*      common background animation*/
+/*#region       main background color*/
 
+.main_container{
+    background-image: linear-gradient(0deg, 
+    var(--main-bg) 35%, 
+    #0f0f2996 80%);
+}
+/*#endregion*/
 
+/*#region       common background animation*/
 .btn-upgrade:before,.img:before,.spotify:before {
     content: '';
     background: linear-gradient(45deg, 
@@ -34,7 +57,6 @@
     transition: opacity 0.4s ease-in-out;
     border-radius: 10px;
 }
-
 .btn-upgrade:active:after{background: transparent;}
 .btn-upgrade:hover:before,.img:hover:before,.spotify:hover:before {opacity: 1;}
 .btn-upgrade:after,.img:after,.spotify:after {
@@ -53,13 +75,9 @@
     50% { background-position: 500% 0; }
     100% { background-position: 0 0; }
 }
+/*#endregion*/
 
-
-/*      button upgrade*/
-
-
-
-/*#region      img background*/
+/*#region       img background*/
 
 .img{
     background-color: transparent;
@@ -77,8 +95,7 @@
 }
 /*#endregion*/
 
-
-/*      spotify logo background*/
+/*#region       spotify logo background*/
 
 .spotify{position: relative;z-index: 1;}
 .spotify:before{opacity: 1; width: 75%; height: 40px; left: 15px; top: 10px;}
@@ -87,5 +104,15 @@
 @media screen and (max-width: 767px){
     .spotify:before{opacity: 1; width: 27px; height: 27px; left: 14px; top: 7px;}
 }
+/*#endregion*/
+
+/*#region       rotate img*/
+
+.rotate{
+
+}
 
 
+
+
+/*#endregion*/

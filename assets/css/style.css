@@ -18,7 +18,7 @@
 html{overflow: hidden;}
 body{font-family: 'Roboto', sans-serif; color: white;overflow: hidden;}
 a{color: var(--white); text-decoration: none;}
-*::-webkit-scrollbar{width: 12px; height: 12px;} 
+*::-webkit-scrollbar{width: 12px;} 
 *::-webkit-scrollbar-track {background: rgba(169, 169, 169, 0.089);}
 *::-webkit-scrollbar-thumb{
     background-color: rgba(128, 128, 128, 0.521);
@@ -47,7 +47,6 @@ a{color: var(--white); text-decoration: none;}
 }
 .container > aside{
     background-color: var(--black);
-    transition: all 0.4s;
     width: 100%;
 }
 .container > main{
@@ -171,28 +170,24 @@ a{color: var(--white); text-decoration: none;}
 
 .main_container{
     background-color: var(--main-bg);
-    
     height: calc(100vh - 205px);
     width: 100%;
+    overflow-x: hidden;
     overflow-y: auto;
 
 }
 .card{
     background-color: #0000002d;
     position: relative;
-    min-width: 170px;
-    max-width: 220px;
+    min-width: 220px;
+    width: 220px;
     height: 320px;
     margin: 8px;
     padding: 12px;
     border-radius: 12px;
-    
 }
 .card:active{
     box-shadow: 0px 0px 13px 0px #a5a5a542;
-}
-.img:hover img{
-    width: 200px;
 }
 .img{position: relative;}
 .card  img{width: 100%;}
@@ -213,15 +208,8 @@ a{color: var(--white); text-decoration: none;}
 .img:hover .play{
     display: block;
 }
-.img:hover img{
-    filter: brightness(80%);
-    transition: all 0.4s;
-    
-}
-
 .list_section{
     max-width: 100%;
-    overflow-x: auto;
 }
 .card_section{
     flex-wrap: nowrap;
@@ -375,6 +363,7 @@ footer i:hover, footer img:hover{
 
 /*#region               QUERY*/
 
+
 @media screen and (min-width: 768px){
 
     /*#region           LAYOUT*/
@@ -435,7 +424,7 @@ footer i:hover, footer img:hover{
 
 @media screen and (max-width: 479px){
 
-    .container > aside      {width: 40px;}
+    .container > aside      {width: 50px;}
     .container > main       {width: calc(100% - 40px);}
     .upgrade, .site_navbar  {font-size: 13px;}
 
@@ -446,7 +435,7 @@ footer i:hover, footer img:hover{
 
     /*#region           MAIN*/
         h3, .subtitle       {text-align: center;}
-        .card_section       {justify-content: center;}
+        .card               {min-width: 180px;}
     /*#endregion*/
 
     /*#region           FOOTER*/
