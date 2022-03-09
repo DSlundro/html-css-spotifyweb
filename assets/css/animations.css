@@ -1,16 +1,15 @@
 /*#region       transitions*/
-.container > aside{
-    transition: all 0.4s;
-}
+.container > aside{transition: all 0.4s ease;}
+.container > main {transition: all 0.4s ease;}
 
 .img:hover img{
     filter: brightness(80%);
     width: calc(100% + 2px);
-    transition: all 0.4s;
+    transition: all 0.4s ease;
 }
 
 .card{
-    transition: all 0.4s;
+    transition: all 0.4s ease;
 }
 /*#endregion*/
 
@@ -86,7 +85,8 @@
 /*#endregion*/
 
 /*#region       img play*/
-.img:hover .play {animation: play 0.5s;}
+.img:hover .play {animation: play 0.5s; animation-timing-function: ease-out;}
+
 @keyframes play {
     from {
         font-size: 0px;
