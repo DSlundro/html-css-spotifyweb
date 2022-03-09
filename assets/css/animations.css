@@ -141,8 +141,20 @@
 }
 /*#endregion*/
 
-/*#region       spotify logo*/
+/*#region       img left footer*/
+.left_footer img{
+    border-radius: 50%;
+    animation: rolling 4s 0.2s linear infinite;
+}
 
+@keyframes rolling {
+    0%      {transform: rotate(0);}
+    100%    {transform: rotate(1turn);}
+}
+
+/*#endregion*/
+
+/*#region       spotify logo*/
 .spotify{position: relative;z-index: 1;}
 .spotify:hover img{filter: contrast(0.5); transition: all 0.3s;}
 .spotify:before{opacity: 1; width: 75%; height: 40px; left: 15px; top: 10px;}

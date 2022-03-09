@@ -463,13 +463,24 @@ footer i:hover, footer img:hover{
     /*#endregion*/
 
     /*#region           FOOTER*/
-    .left_footer            {display: none;}
+    .left_footer > .song, 
+    .left_footer > .song_icons{display: none;}
+    .left_footer img{
+        position: absolute;
+        top: 5px;
+        left: 22px;
+    }
+    .left_footer{width: 0%;}
     .center_footer          {width: 100%; padding: 0 15px;}
     /*#endregion*/
 }
 
 @media screen and (max-width: 295px){
     .main_container         {height: calc(100vh - 269px);}
+}
+
+@media screen and (max-width: 260px){
+    .left_footer            {display: none;}
 }
 
 @media screen and (max-height: 250px){
