@@ -88,9 +88,45 @@
 /*#region       img play*/
 .img:hover .play {animation: play 0.5s;}
 @keyframes play {
-    from {font-size: 20px;left: 50%;top: 90%;transform: rotate(0deg);}
-    to   {font-size: 50px;left: 50%;top: 50%;transform: rotate(120deg);}
+    from {
+        font-size: 0px;
+        left: 20%;
+        bottom: 0%;
+        transform: rotate(0deg) translate(50%, 50%);
+    }
+    to {
+        font-size: 50px;
+        left: 20%;
+        bottom: 35%;
+        transform: rotate(120deg) translate(-50%, -50%);
+    }
 }
+
+@media screen and (max-width: 479px){
+    .play {
+        font-size: 50px;
+        left: 10%;
+        bottom: 30%;
+        transform: rotate(120deg) translate(-50%, -50%);
+        display: none;
+    }
+
+    @keyframes play {
+        from {
+            font-size: 0px;
+            left: 20%;
+            bottom: 0%;
+            transform: rotate(0deg) translate(50%, 50%);
+        }
+        to {
+            font-size: 50px;
+            left: 10%;
+            bottom: 30%;
+            transform: rotate(120deg) translate(-50%, -50%);
+        }
+    }
+}
+
 /*#endregion*/
 
 /*#region       img artist rotate*/
@@ -135,7 +171,7 @@
 }
 @keyframes slidein {
     from {margin-right: calc(100% - 220px);}
-    to   {margin-right: 0%;}
+    to   {margin-right: 19px;}
 }
 @media screen and (max-width: 767px){
     .btn-upgrade{
@@ -146,6 +182,7 @@
         from {margin-right: calc(100% - 220px);}
         to   {margin-right: 0%;}
     }
+    
 }
 /*#endregion*/
 

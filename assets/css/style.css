@@ -198,12 +198,12 @@ a{color: var(--white); text-decoration: none;}
 .subtitle{color: var(--nav-text);}
 .circle{border-radius: 50%;}
 
-.play{
+.play {
     position: absolute;
     font-size: 50px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 20%;
+    bottom: 35%;
+    transform: rotate(120deg) translate(-50%, -50%);
     display: none;
 }
 .img:hover .play{
@@ -366,6 +366,9 @@ footer i:hover, footer img:hover{
 
 @media screen and (min-width: 1030px){
     .card                   {min-width: 250px;max-width: 270px;}
+    .song_icons{padding-left: 30px;
+                flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -471,4 +474,5 @@ footer i:hover, footer img:hover{
 
 @media screen and (max-height: 250px){
     .upgrade                {display: none;}
+    .left_footer            {justify-content: flex-end; padding-right: 30px;}
 }
