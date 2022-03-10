@@ -36,7 +36,7 @@ a{color: var(--white); text-decoration: none;}
 
 /*#endregion*/
 
-/*#region               MOBILE 480px  */
+/*#region               MOBILE 480px */
 
 .container{
     background-color: var(--main-bg);
@@ -97,7 +97,6 @@ a{color: var(--white); text-decoration: none;}
 .downside a:hover{
     color: var(--white);
 }
-
 .downside .user:hover{
     cursor: initial ;
 }
@@ -128,12 +127,9 @@ a{color: var(--white); text-decoration: none;}
     position: relative;
     z-index: 0;
 }
-
 .img img{
     border: 2px solid var(--main-bg);
 }
-
-
 /*#endregion*/
 
 /*#region           NAVBAR*/
@@ -162,8 +158,6 @@ a{color: var(--white); text-decoration: none;}
     height: 2px;
     width: 25px;
 }
-
-
 /*#endregion*/
 
 /*#region           MAIN*/
@@ -174,7 +168,6 @@ a{color: var(--white); text-decoration: none;}
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-
 }
 .card{
     background-color: #0000002d;
@@ -216,7 +209,6 @@ a{color: var(--white); text-decoration: none;}
 .card_section{
     flex-wrap: nowrap;
 }
-
 /*#endregion*/
 
 /*#region           FOOTER*/
@@ -238,7 +230,6 @@ footer i:hover, footer img:hover{
     width: 33.33%;
     display: flex;
 }
-
 .left_footer    {order: 1;}
 .center_footer  {order: 2;}
 .right_footer   {order: 3;}
@@ -259,9 +250,7 @@ footer i:hover, footer img:hover{
 .song_icons i:hover{
     color: var(--white);
 }
-
 /*#endregion*/
-
 
 /*#region           CENTER*/
 
@@ -287,7 +276,6 @@ footer i:hover, footer img:hover{
     max-width: 400px;
     margin: auto;
 }
-
 .central_bar{
     background-color: var(--footer-light);
     position: absolute;
@@ -300,7 +288,6 @@ footer i:hover, footer img:hover{
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 .dark_bar{
     position: absolute;
     background-color: var(--footer-bar);
@@ -325,14 +312,13 @@ footer i:hover, footer img:hover{
 .bar:hover .dark_bar,
 .right_bar:hover .dark_bar
 {background-color: #ADFF2F;}
-
 /*#endregion*/
 
 /*#region           RIGHT*/
+
 .right_footer{
     position: relative;
 }
-
 .right_footer > div:first-child{
     position: relative;
     width: 100%;
@@ -358,10 +344,86 @@ footer i:hover, footer img:hover{
     transform: translate(0, -50%);
     max-width: 200px;
 }
-
 /*#endregion*/
 
 /*#endregion*/
+
+/*#endregion*/
+
+
+/*#region           MY PLAYLIST*/
+
+.pl_container{
+    height: calc(100vh - 0px);
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*#region           NAVBAR */
+.upgrade_pl{
+    background-color: rgba(255, 250, 250, 0.432);
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+}
+.btn{
+    text-transform: lowercase !important;
+    padding: 2px 3px;
+    align-items: center;
+}
+.btn i:first-child{
+    padding: 10px;
+    background-color: #535353;
+    border-radius: 50%;
+}
+.left-right{
+    position: absolute;
+    left: 2%;
+}
+.left-right i{
+    left: calc(100% - 10px) !important;
+    padding: 8px 13px;
+    margin: 0 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.left-right i:first-child{background-color: #2C2E2C;}
+.left-right i:last-child {background-color: #545854;}
+/*#region*/
+
+
+
+
+
+
+
+
+
+
+/*#endregion*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*#region               QUERY*/
 
@@ -400,6 +462,7 @@ footer i:hover, footer img:hover{
     .playlists              {max-height: 150px;margin-top: 10px;overflow-y: auto;}
     .playlist_name i        {display: none; font-size: 12px; padding-right: 7px;}
     .playlist_name:hover i  {display: block;}
+    .active                 {display: block!important;}
 
     /*#endregion*/
 
@@ -408,15 +471,8 @@ footer i:hover, footer img:hover{
     /**/
 
     /*#region           FOOTER*/
-    .right_footer > div:last-child{
-        display: block;
-        width: 40%;
-    }
-    .right_footer > div:first-child{
-        width: 60%;
-        text-align: right;
-    }
-    
+    .right_footer > div:last-child{display: block;width: 40%;}
+    .right_footer > div:first-child{width: 60%;text-align: right;}
     /*#endregion*/
 }
 
@@ -445,15 +501,15 @@ footer i:hover, footer img:hover{
     /*#endregion*/
 
     /*#region           MAIN*/
-        h3, .subtitle       {text-align: center;}
-        .card               {min-width: 180px;}
+    h3, .subtitle           {text-align: center;}
+    .card                   {min-width: 180px;}
     /*#endregion*/
 
     /*#region           FOOTER*/
-        .footer_container   {justify-content: space-between;}
-        .left_footer        {width: 50%;}
-        .center_footer      {width: 50%; padding-right: 10px;}
-        .right_footer       {display: none;}
+    .footer_container       {justify-content: space-between;}
+    .left_footer            {width: 50%;}
+    .center_footer          {width: 50%; padding-right: 10px;}
+    .right_footer           {display: none;}
     /*#endregion*/
 }
 
@@ -494,3 +550,4 @@ footer i:hover, footer img:hover{
     .left_footer > .song_icons{display: none;}
     .left_footer img        {top: 10px;right: 5%;}
 }
+
