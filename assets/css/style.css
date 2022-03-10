@@ -452,6 +452,11 @@ footer i:hover, footer img:hover{
 }
 
 .dots i{color: #b4b4b4;}
+.list_heading{
+    color: #b4b4b4;
+    border-bottom: 1px solid;
+}
+.list_heading .fa-clock{color: #b4b4b4 !important;}
 .list_title{
     height: 100%;
     width: 100%;
