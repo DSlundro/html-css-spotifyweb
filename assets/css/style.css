@@ -202,6 +202,7 @@ a{color: var(--white); text-decoration: none;}
 }
 .img:hover .play{
     display: block;
+    
 }
 .list_section{
     max-width: 100%;
@@ -220,6 +221,7 @@ footer{
 }
 footer i:hover, footer img:hover{
     cursor: pointer;
+    
 }
 .footer_container{
     width: 100%;
@@ -411,6 +413,9 @@ footer i:hover, footer img:hover{
     aspect-ratio: 1/1;
     border-radius: 20px;
     box-shadow: 0 0 7px white;
+}
+.playlist_img img:hover{
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
 .playlist_text{width: 100%;}
 .playlist_text h2{font-size:  7vw;}
