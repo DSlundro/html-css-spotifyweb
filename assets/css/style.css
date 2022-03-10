@@ -432,9 +432,8 @@ footer i:hover, footer img:hover{
     height: 80%;
     width: 100%;
 }
-.pl_list{
-    min-height: 600px;
-    overflow-y: auto;
+.pl_songs{
+    overflow: auto;
 }
 .btn_play i{
     background-color: #1ED760;
