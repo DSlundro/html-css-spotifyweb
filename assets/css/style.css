@@ -456,7 +456,10 @@ footer i:hover, footer img:hover{
     color: #b4b4b4;
     border-bottom: 1px solid;
 }
-.list_heading .fa-clock{color: #b4b4b4 !important;}
+.list_heading .fa-clock{
+    text-align: right;
+    color: #b4b4b4 !important;
+}
 .list_title{
     height: 100%;
     width: 100%;
@@ -504,32 +507,7 @@ footer i:hover, footer img:hover{
 .list_duration  {width: 15%;}
 /*#endregion*/
 
-
-
-
-
-
-
-
 /*#endregion*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*#region               QUERY*/
 
@@ -538,6 +516,15 @@ footer i:hover, footer img:hover{
     .song_icons{padding-left: 30px;
                 flex-direction: column;
     }
+}
+
+@media screen and (max-width: 1029px){
+    /*#region           MY PLAYLIST*/
+    .list_title             {width: 70%;}
+    .list_duration          {width: 30%;}
+    .list_album             {display: none !important;}
+    .list_time              {display: none !important;}
+    /*#endregion*/
 }
 
 @media screen and (min-width: 768px){
@@ -593,6 +580,9 @@ footer i:hover, footer img:hover{
 
 @media screen and (max-width: 567px){
     .main_container         {height: calc(100vh - 236px);}
+        /*#region           MY PLAYLIST*/
+        .btn-c:first-of-type{display: none !important;}
+        /*#endregion*/
 }
 
 @media screen and (max-width: 479px){
@@ -617,6 +607,17 @@ footer i:hover, footer img:hover{
     .center_footer          {width: 50%; padding-right: 10px;}
     .right_footer           {display: none;}
     /*#endregion*/
+}
+
+@media screen and (max-width: 380px){
+            /*#region           MY PLAYLIST*/
+            .playlist_text  {display: none !important;}
+            .list_duration  {display: none !important;}
+            .btn-c          {display: none !important;}
+            .list_title     {width: 100%;}
+            .playlist_img   {width: 100%; text-align: center;}
+
+            /*#endregion*/
 }
 
 @media screen and (max-width: 320px){
